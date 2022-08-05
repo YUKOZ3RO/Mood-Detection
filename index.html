@@ -1,76 +1,35 @@
 <!DOCTYPE html>
+
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>video app</title>
+    <title>Cnetwork</title>
     <script defer src="face-api.min.js"></script>
     <script defer src="script.js"></script>
-    <style>
-      body {
-        background-color: black;
-        margin: 0;
-        padding: 0;
-        width: 100vw;
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      canvas {
-        position: absolute;
-        max-height: 500px;
-        max-width: 500px;
-      }
-      .outerBox {
-        color: rgb(2, 132, 161);
-        max-width: fit-content;
-      }
-
-      h1 {
-        color: rgb(174, 198, 203);
-        padding-top: 5px;
-        display: flex;
-        flex-direction: row;
-        display: block;
-        font-size: 2em;
-        margin-block-start: 0.67em;
-        margin-block-end: 0.67em;
-        margin-inline-start: 0px;
-        margin-inline-end: 0px;
-        font-weight: bold;
-      }
-      .videobox {
-        background-color: rgb(2, 132, 161);
-        display: flex;
-        justify-content: space-around;
-        height: 500px;
-        width: 500px;
-      }
-
+    <link rel="stylesheet" type="text/css" href="styles.css">
    
-    </style>
+  
+   
   </head>
-  <body>
-    <div className="outerBox">
-      <div>
-       
-          <h1 class="heading">
-            Detet Mood<span style="font-weight: normal"> .</span>
+  <body> <div class="outerBox">
+       <div class="heading">
+          <h1>
+            Detect Mood
+            
           </h1>
         </div>
-      </div>
-      <div className="videobox"></div>
-      <div id="canvas">
-        <video id="video" width="500" height="500" autoplay muted></video>
-      </div>
-    </div>
+    <div class="innerBox">
+     
+      
+      <div class="videobox"><video id="video" width="500" height="500" autoplay muted></video></div>
+    
+   
 
-    <div className="moodResult">
+    <div class="moodResult">
       <div><h2 id="Happy" style="background-color: yellow">Happy</h2></div>
-      <div><h2 id="Sad" style="background-color: blue">sad</h2></div>
+      <div><h2 id="Sad" style="background-color: blue">Sad</h2></div>
       <div>
         <h2 id="Disgusted" style="background-color: green">Disgusted</h2>
       </div>
@@ -79,7 +38,7 @@
       <div><h2 id="Fearful" style="background-color: Tomato">Fearful</h2></div>
       <div>
         <h2 id="Surprised" style="background-color: Tomato">Surprised</h2>
-      </div>
-    </div>
+      </div></div>
+    </div> </div></div>
   </body>
 </html>
